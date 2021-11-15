@@ -19,7 +19,7 @@
 :root {
     --background-color: #fff;
     --main-font: Soleil Regular, Inter, Helvetica Neue, Arial, sans-serif;
-    --main-font-size: 0.7em;
+    --main-font-size: 0.8em;
     --main-color: #181818;
     --block-margin: 0.2em;
     --heading-margin: 0 0 0.2em 0;
@@ -50,7 +50,7 @@
 
 .reveal {
     font-family: "Soleil", "Inter", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: normal;
     color: #181818;
 }
