@@ -519,7 +519,8 @@
 }
 
 html {
-    font-size: 4.5vmin;
+    font-size: 40px;
+    /* font-size: 4.5vmin; */
 }
 
 @media (max-width: 768px) {
