@@ -7,7 +7,7 @@
 		This is the main file for the reveal.js presentation.
 		This includes the 3rd presentation for microbiome lecture.
 	---
-    Last Modified: 2021-11-16 09:17:32
+    Last Modified: 2021-11-16 11:19:55
     Modified By: Hyunbin Kim (khb7840@gmail.com)
     ---
     Copyright © 2021 Hyunbin Kim, All rights reserved
@@ -544,8 +544,209 @@
 					<span>2021-35389 Hyunbin Kim / 2021. 11. 16</span>
 				</section>
 
+				<section>
+					<h2>Abstract</h2>
+					<ul>
+					<div class="fragment">
+					<h6>SAMPLES</h6>
+					<li>Genome comparison of 149 HPV-positive and 335 HPV-negative oral squamous cell carcinomas (OSCC) samples (tumor/normal pairs)</li>
+					</div>
+					<div class="fragment">
+					<h6>MUTATIONAL SIGNATURES</h6>
+					<li>Different risk factors underlying the two cancer types were reflected in distinctive genomic mutational signatures</li>
+					<li>In HPV-positive OSCCs, the signatures of APOBEC cytosine deaminase editing, associated with anti-viral immunity, were strongly linked to overall mutational burden.</li>
+					<li>In contrast, in HPV-negative OSCCs, T>C substitutions in the sequence con- text 5′-ATN-3′ correlated with tobacco exposure.</li>
+					</div>
+					<div class="fragment">
+					<h6>GENES WITH MUTATIONS</h6>
+					<li>Significant enrichment of somatic mutations was confirmed or newly identified in PIK3CA, KMT2D, FGFR3, FBXW7, DDX3X, PTEN, TRAF3, RB1, CYLD, RIPK4, ZNF750, EP300, CASZ1, TAF5, RBL1, IFNGR1, and NFKBIA.</li>
+					<li>
+					High-ranking variant allele fractions implicated ZNF750, PIK3CA, and EP300 mutations as candidate driver events in HPV-positive cancers.
+					</li>
+					</div>
+					<div class="fragment">
+					<h6>GENE EXPRESSION & CNV</h6>
+					<li>Universal expression of HPV E6 and E7 oncogenes was a sine qua non of HPV-positive OSCCs</li>
+					<li>Frequent copy number changes were associated with concordant changes in gene expression. Chr 11q (including CCND1) and 14q (including DICER1 and AKT1) were recurrently lost in HPV-positive OSCCs, in contrast to their gains in HPV-negative OSCCs</li>
+					</div>
+					</ul>
+				</section>
 
+				<section>
+					<img src="img/HeadandNeck.png" alt="" width=100%>
+				</section>
 
+				<section>
+					<h2>Mechanism of HPV infection</h2>
+					<div class="container" style="display:flex">
+					<div class="col" style="flex:1.5">
+					<img src="img/HPV01.png" alt="">
+					</div>
+					<div class="col" style="flex:1">
+					<p>Mechanism of HPV infection affecting the occurrence and development of cancer.</p>
+					<p>After HPV infects mucosal epithelial cells, its DNA is integrated into the host cell genome, thereby resulting in <span>overexpression of E6 and E7 mRNA</span> and altered function of various proteins in host cells. </p>
+					<p>E6 and E7 products <span>degrades (or inactivates) pRb and P53 which act as tumor suppressor</span> </p>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Pipeline</h2>
+					<img src="img/Pipeline.png" alt="">
+				</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Pipeline</h2>
+					<div class="container" style="display:flex">
+					<div class="col" style="flex:1">
+					<img src="img/Pipeline.png" alt="">
+					<ul class="fragment">
+						<li>HPV transcript alignment - GSNAP, Cufflinks</li>
+						<li>SNV detection - MuTect, Strelka (SNV)</li>
+						<li>CNV calling - In house script</li>
+						<li>Mutational signature - deconstructSigs, 30 pre-defined COSMIC cancer mutation signatures</li>
+						<li>VAF analysis - MuTect, Strelka, LoFreq, Samtools</li>
+					</ul>
+					</div>
+					<div class="col" style="flex:1">
+					<img src="img/SNV_CNV.png" alt="">
+					</div>
+				</section>
+
+				<section>
+					<h2>Recurrent mutations in HPV+ oral cancers</h2>
+					<img src="img/Research01.png" alt="" width=80%>
+					<p>Recurrent mutations in PIK3CA, KMT2D, FGFR3, FBXW7, DDX3X, PTEN, TRAF3, RB1, CYLD, RIPK4, ZNF750, EP300, CASZ1, TAF5, RBL1, IFNGR1, and NFKBIA</p>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Most significantly mutated genes:</h2><h2>HPV+ oral cancers vs HPV- oral cancers</h2>
+					<img src="img/Research04.png" alt="" width=50%>
+					<ul>
+						<li>HPV+ oral cancers: PIK3CA, ZNF750, FGFR3, CASZ1, PTEN, CYLD, DDX3X</li>
+						<li>HPV- oral cancers: TP53, FAT1, CDKN2A, NOTCH1, CASP8, HRAS</li>
+					</ul>
+				</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Most significantly mutated genes:</h2><h2>HPV+ oral cancers vs HPV+ cervical cancers</h2>
+					<img src="img/Cervical.png" alt="" width=50%>
+					<ul>
+						<li>HPV+ oral cancers: PIK3CA, ZNF750, FGFR3, CASZ1, PTEN, CYLD, DDX3X</li>
+						<li>HPV+ cervical cancers: PIK3CA, EP300, FBXW7, PTEN</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="container" style="display:flex">
+					<div class="col" style="flex:2">
+					<img src="img/Research05.png" alt="">
+					</div>
+					<div class="col" style="flex:1">
+						<br>
+						<h3>Somatic mutations alter protein structures and functions.</h3>
+					</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Mutational signature analysis</h2>
+					<img src="img/Mutsig01.png" alt="" width=60%>
+					<p>By analyzing the context of the variants, we can find out why these variants are accumulated in the genome</p>
+				</section>
+
+				<section>
+					<img src="img/Mutsig02.png" alt="" width=100%>
+				</section>
+				<section>
+					<img src="img/Mutsig03.png" alt="" width=100%>
+				</section>
+				<section>
+					<br>
+					<h2>How signature is generated</h2>
+					<img src="img/Mutsig04.png" alt="" width=100%>
+				</section>
+
+				<section>
+					<img src="img/Mutsig05.png" alt="" width=100%>
+				</section>
+				<section>
+					<img src="img/Mutsig06.png" alt="" width=100%>
+				</section>
+
+				<section>
+					<br>
+					<h2>Signatures related to oral cancers</h2>
+					<img src="img/Mutsig07.png" alt="" width=100%>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Signature analysis result - HPV+ oral cancers</h2>
+					<img src="img/Research02.png" alt="">
+				</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Signature analysis result - HPV+ oral cancers</h2>
+					<div class="container" style="display:flex">
+					<div class="col" style="flex:2">
+
+					<img src="img/Research02.png" alt="" width=100%>
+					<img src="img/APOBEC01.jpg" alt="" width=100%>
+					<img src="img/APOBEC02.jpg" alt="" width=100%>
+					</div>
+					<div class="col" style="flex:3">
+						<br>
+					<p> Most pronounced among HPV-positive OSCCs were the fractions of C>T and C>G mutations observed in the context of 5′ -T∗CW-3′ genomic sequences associated with APOBEC cytidine deaminase editing</p>
+					</div>
+				</section>
+
+				<section>
+					<img src="img/Mutsig08.png" alt="" width=80%>
+				</section>
+
+				<section>
+					<img src="img/Mutsig09.png" alt="" width=80%>
+				</section>
+
+				<section>
+					<div class="container" style="display:flex">
+					<div class="col" style="flex:0.9">
+					<br>
+					<br>
+					<img src="img/VAF02.png" alt="">
+					</div>
+					<div class="col" style="flex:1">
+					<img src="img/VAF01.png" alt="">
+					</div>
+				</section>
+
+				<section>
+					<h2>Driver mutation predicted with VAF</h2>
+					<img src="img/Research08.png" alt="" width=80%>
+				</section>
+
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Copy number variation</h2>
+					<img src="img/Research06.png" alt="" width=70%>
+					<ul>
+					<li>HPV+: 3q gain, 11q loss</li>
+					<li>HPV-: 8q, 14 gain, 18q loss</li>
+					</ul>
+				</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Copy number variation</h2>
+					<img src="img/Research07.png" alt="">
+					<ul>
+					<li>HPV+: 3q gain, 11q loss</li>
+					<li>HPV-: 8q, 14 gain, 18q loss</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Summary</h2>
+					<img src="img/Research09.png" alt="" style="display:block;margin-left:auto;margin-right:auto;" width=50%>
+				</section>
+				<section>
+					<h2>Additionaly,</h2>
+					<img src="img/ecoli.jpeg" alt="" width=80%>
+					<h6>https://www.vanboxtellab.eu/publications/mutational-signature-in-colorectal-cancer-caused-by-genotoxic-pks-e-coli</h6>
+				</section>
 
 			</div>
 		</div>
