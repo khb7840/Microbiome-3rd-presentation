@@ -99,7 +99,7 @@
     color: #181818;
     font-family: "Soleil Book", "Inter", "Helvetica Neue", Arial, sans-serif;
     font-weight: 500;
-    line-height: 1em;
+    line-height: 1.2em;
     letter-spacing: normal;
     text-transform: none;
     text-shadow: none;
@@ -519,7 +519,7 @@
 }
 
 html {
-    font-size: 40px;
+    font-size: 42px;
     /* font-size: 4.5vmin; */
 }
 
